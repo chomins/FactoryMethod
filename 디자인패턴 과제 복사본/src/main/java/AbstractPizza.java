@@ -8,6 +8,7 @@ public abstract class AbstractPizza {
     PizzaIngredientFactory.Cheese cheese;
     PizzaIngredientFactory.Kimchi kimchi;
     PizzaIngredientFactory.Clam clam;
+    PizzaIngredientFactory.Lamb lamb;
 
 
 

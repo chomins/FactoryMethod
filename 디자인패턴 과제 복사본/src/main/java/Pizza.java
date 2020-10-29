@@ -4,6 +4,7 @@ public abstract class Pizza {
     String name;
     String dough;
     String sauce;
+    String cheese;
     ArrayList toppings = new ArrayList();
 
     void prepare() {
@@ -37,6 +38,7 @@ public abstract class Pizza {
         display.append("---- " + name + " ----\n");
         display.append(dough + "\n");
         display.append(sauce + "\n");
+        display.append(cheese + "\n");
         for (int i = 0; i < toppings.size(); i++) {
             display.append((String )toppings.get(i) + "\n");
         }

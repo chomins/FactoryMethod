@@ -2,23 +2,23 @@ public class DependentPizzaStore {
     Pizza pizza = null;
     Pizza createPizza(String style,String type) {
 
-        if(style.equals("Seoul")){
+        if(style.equals("Beijing")){
             if (type.equals("cheese")){
-                pizza = new SeoulStyleCheesePizza();
+                pizza = new BeijingStyleCheesePizza();
             }
             if (type.equals("veggie")){
-                pizza = new SeoulStyleVeggiePizza();
+                pizza = new BeijingStyleVeggiePizza();
             }
             if (type.equals("clam")){
-                pizza = new SeoulStyleClamPizza();
+                pizza = new BeijingStyleClamPizza();
             }
             else{
-                pizza = new SeoulStyleKimchiPizza();
+                pizza = new BeijingStylelambPizza();
             }
 
         }
         else{
-            System.out.println("서울지역 외 피자는 안팔아요.");
+            System.out.println("북경지역 외 피자는 안팔아요.");
             return null;
         }
 

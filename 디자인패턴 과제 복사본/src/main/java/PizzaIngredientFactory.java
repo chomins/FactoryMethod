@@ -6,6 +6,7 @@ public interface PizzaIngredientFactory {
     public Veggies[] createVeggies();
     public Kimchi createKimchi();
     public Clam createClam();
+    public Lamb createLamb();
 
 
     class Dough {
@@ -25,5 +26,8 @@ public interface PizzaIngredientFactory {
     }
 
     class Clam {
+    }
+
+    class Lamb {
     }
 }

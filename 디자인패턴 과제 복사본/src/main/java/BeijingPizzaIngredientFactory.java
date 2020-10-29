@@ -1,22 +1,22 @@
-public class SeoulPizzaIngredientFactory implements PizzaIngredientFactory {
+public class BeijingPizzaIngredientFactory implements PizzaIngredientFactory {
     @Override
     public Dough createDough() {
-        return new CrustDough();
+        return new HandDough();
     }
 
     @Override
     public Sauce createSauce() {
-        return new SeoulSauce();
+        return new BeijingSauce();
     }
 
     @Override
     public Cheese createCheese() {
-        return new MozzaCheese();
+        return new RicotaCheese();
     }
 
     @Override
     public Veggies[] createVeggies() {
-        Veggies vaggies [] = {new Garlick(), new Onion()};
+        Veggies vaggies [] = {new BeijingPizzaIngredientFactory.Garlick(), new BeijingPizzaIngredientFactory.Onion()};
         return vaggies;
     }
 
@@ -54,5 +54,26 @@ public class SeoulPizzaIngredientFactory implements PizzaIngredientFactory {
     }
 
     private class FreshLamb extends Lamb {
+        FreshLamb(){
+            System.out.println("신선한 양고기 ");
+        }
+    }
+
+    private class RicotaCheese extends Cheese {
+        RicotaCheese(){
+            System.out.println("리코타치즈");
+        }
+    }
+
+    private class BeijingSauce extends Sauce {
+        BeijingSauce(){
+            System.out.println("Sauce");
+        }
+    }
+
+    private class HandDough extends Dough {
+        HandDough(){
+            System.out.println("handDough");
+        }
     }
 }
